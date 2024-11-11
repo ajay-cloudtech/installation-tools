@@ -73,3 +73,6 @@ WantedBy=multi-user.target
    27  sudo systemctl enable sonar
    28  sudo systemctl status sonar
    29  tail -f /opt/sonarqube/logs/sonar.log
+
+allow 9000 port in ec2 security group (inbound rules)
+<Yourec2PublicIP>:9000 - login using admin admin
